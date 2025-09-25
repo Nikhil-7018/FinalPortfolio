@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: [
+    "./*.{html,js}",      // all HTML + JS in the root folder
+    "./src/**/*.{html,js}" // if you have src/ with files
+  ],
   theme: {
     extend: {
       transitionTimingFunction: {
